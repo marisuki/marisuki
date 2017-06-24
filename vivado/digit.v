@@ -34,12 +34,12 @@ module digit(
     output g,
     output enable
     );
-    assign a=~(A | C | ( B & D ) | ( ( ~B ) & ( ~D ) ) );
-    assign b=~(~B | ( C & D ) | ( ( ~C ) & ( ~D ) ) );
-    assign c=~( B | (~C) | D );
-    assign d=~(A | ( C & ( ~D ) ) | ( ( ~B ) & C ) | ( ( ~B ) & ( ~D ) ) | ( B & (~C) & D ) );
-    assign e=~( ( C & ( ~D ) ) | ( ( ~B ) & ( ~D ) ) );
-    assign f=~(A | ( ( ~C ) & ( ~D ) ) | ( B & ( ~C ) ) | ( B & ( ~D ) ) );
-    assign g=~(A | ( C & ( ~D ) ) | ( ( ~B ) & C ) | ( B & ( ~C ) ) );
+    assign a=(A | C | ( B & D ) | ( ( ~B ) & ( ~D ) ) );
+    assign b=(~B | ( C & D ) | ( ( ~C ) & ( ~D ) ) );
+    assign c=( B | (~C) | D );
+    assign d=(A | ( C & ( ~D ) ) | ( ( ~B ) & C ) | ( ( ~B ) & ( ~D ) ) | ( B & (~C) & D ) );
+    assign e=( ( C & ( ~D ) ) | ( ( ~B ) & ( ~D ) ) );
+    assign f=(A | ( ( ~C ) & ( ~D ) ) | ( B & ( ~C ) ) | ( B & ( ~D ) ) );
+    assign g=(A | ( C & ( ~D ) ) | ( ( ~B ) & C ) | ( B & ( ~C ) ) );
     assign enable=1;
 endmodule
