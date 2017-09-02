@@ -56,7 +56,98 @@ int hungarian()
 }
 //template end
 
-
+//hun 裸题
+#include<iostream>
+#include<queue>
+#include<cstring>
+#include<algorithm>
+#include<vector>
+#include<math.h>
+#include<string>
+#include<stack>
+#include<map>
+#include<cstdio>
+#include<set>
+using namespace std;
+#define ll long long
+#define MOD 1e9+7
+#define INFLL 0x7fffff
+#define INFI 0x7f7f7f7f
+#define INF 0x3f3f3f3f
+#define inf 0x3f
+#define esp 1.0e-10
+#define M(a,k) memset(a,k,sizeof a)
+#define Endl endl
+#define maxn 1005
+#ifndef ONLINE_JUDGE
+template <class T> struct greater {
+  bool operator() (const T& x, const T& y) const {return x>y;}
+  typedef T first_argument_type;
+  typedef T second_argument_type;
+  typedef bool result_type;
+};
+#endif
+int LN,RN;
+int maps[maxn][maxn],linker[maxn];
+int used[maxn];
+bool dfs(int u)
+{
+    for(int v=1;v<=RN;v++)
+    {
+        if(maps[u][v]&&!used[v])
+        {
+            used[v]=1;
+            if(linker[v]==-1||dfs(linker[v]))
+            {
+                linker[v]=u;
+                return true;
+            }
+        }
+    }
+    return false;
+}
+int hun()
+{
+    int ans=0;
+    memset(linker,-1,sizeof linker);
+    for(int L=1;L<=LN;L++)
+    {
+        memset(used,0,sizeof used);
+        if(dfs(L))
+        {
+            ans++;
+        }
+    }
+    return ans;
+}
+int main()
+{
+#ifndef ONLINE_JUDGE
+    system("color F0");
+#endif
+    int t;
+    //cin>>t;
+    int k,n,m;
+    while(cin>>k)
+    {
+        if(!k) break;
+        cin>>n>>m;
+        memset(maps,0,sizeof maps);
+        for(int i=1;i<=k;i++)
+        {
+            int u,v;
+            cin>>u>>v;
+            maps[u][v]=1;
+        }
+        LN=n,RN=m;
+        int ans=hun();
+        cout<<ans<<endl;
+    }
+#ifndef ONLINE_JUDGE
+    system("pause");
+#endif
+    return 0;
+}
 
 // bfs:
 //template begin

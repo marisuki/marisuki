@@ -1,6 +1,6 @@
 // Tarjan: 1. tarjan(int u,int father) //双联通分量
 //(SPF), poj-1523
-
+// 存在两条点/边不重复路径
 #include<iostream>
 #include<queue>
 #include<cstring>
