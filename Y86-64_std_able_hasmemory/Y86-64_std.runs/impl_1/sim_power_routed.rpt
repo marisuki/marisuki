@@ -1,0 +1,241 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date             : Tue Dec 19 21:20:36 2017
+| Host             : RuiKang running 64-bit major release  (build 9200)
+| Command          : report_power -file sim_power_routed.rpt -pb sim_power_summary_routed.pb -rpx sim_power_routed.rpx
+| Design           : sim
+| Device           : xc7a100tcsg324-3
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 14.632       |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 14.318       |
+| Device Static (W)        | 0.314        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 33.2         |
+| Junction Temperature (C) | 91.8         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     5.411 |     6847 |       --- |             --- |
+|   LUT as Logic |     5.301 |     4123 |     63400 |            6.50 |
+|   CARRY4       |     0.055 |       94 |     15850 |            0.59 |
+|   Register     |     0.049 |     1857 |    126800 |            1.46 |
+|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |    <0.001 |      384 |     63400 |            0.61 |
+|   Others       |     0.000 |       83 |       --- |             --- |
+| Signals        |     6.677 |     4614 |       --- |             --- |
+| Block RAM      |     2.230 |        8 |       135 |            5.93 |
+| I/O            |     0.000 |       16 |       210 |            7.62 |
+| Static Power   |     0.314 |          |           |                 |
+| Total          |    14.632 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    14.369 |      14.172 |      0.197 |
+| Vccaux    |       1.800 |     0.042 |       0.000 |      0.042 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.152 |       0.146 |      0.006 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                             |
++-----------------------------+------------+------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks         | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                                    |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                   |                                                                                                                    |
+|                             |            |                                                |                                                                                                                    |
+| Overall confidence level    | Low        |                                                |                                                                                                                    |
++-----------------------------+------------+------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------+-----------+
+| Name             | Power (W) |
++------------------+-----------+
+| sim              |    14.318 |
+|   core           |    14.181 |
+|     D_icode_reg  |     0.057 |
+|       r          |     0.057 |
+|     D_ifun_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     D_rA_reg     |    <0.001 |
+|       r          |    <0.001 |
+|     D_rB_reg     |    <0.001 |
+|       r          |    <0.001 |
+|     D_stat_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     D_valC_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     D_valP_reg   |     0.162 |
+|       r          |     0.162 |
+|     E_dstE_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     E_dstM_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     E_icode_reg  |     0.122 |
+|       r          |     0.122 |
+|     E_ifun_reg   |     0.003 |
+|       r          |     0.003 |
+|     E_stat_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     E_valA_reg   |     0.001 |
+|       r          |     0.001 |
+|     E_valB_reg   |     0.001 |
+|       r          |     0.001 |
+|     E_valC_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     F_predPC_reg |     0.209 |
+|       r          |     0.209 |
+|     M_Cnd_reg    |    <0.001 |
+|       r          |    <0.001 |
+|     M_dstE_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     M_dstM_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     M_icode_reg  |     0.133 |
+|       r          |     0.133 |
+|     M_stat_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     M_valA_reg   |     3.135 |
+|       r          |     3.135 |
+|     M_valE_reg   |     0.000 |
+|       r          |     0.000 |
+|     W_dstE_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     W_dstM_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     W_icode_reg  |    <0.001 |
+|       r          |    <0.001 |
+|     W_stat_reg   |    <0.001 |
+|       r          |    <0.001 |
+|     W_valE_reg   |     0.000 |
+|       r          |     0.000 |
+|     W_valM_reg   |     0.000 |
+|       r          |     0.000 |
+|     ccreg        |     0.009 |
+|       c          |     0.009 |
+|     m            |    10.128 |
+|       bank0      |     0.797 |
+|       bank1      |     0.727 |
+|       bank10     |     0.399 |
+|       bank11     |     0.479 |
+|       bank12     |     0.467 |
+|       bank13     |     0.423 |
+|       bank14     |     0.436 |
+|       bank15     |     0.869 |
+|       bank2      |     0.782 |
+|       bank3      |     0.726 |
+|       bank4      |     0.721 |
+|       bank5      |     0.797 |
+|       bank6      |     0.804 |
+|       bank7      |     0.694 |
+|       bank8      |     0.622 |
+|       bank9      |     0.385 |
+|     pci          |     0.222 |
+|     regf         |    <0.001 |
+|       r10_reg    |     0.000 |
+|       r11_reg    |    <0.001 |
+|       r12_reg    |     0.000 |
+|       r13_reg    |     0.000 |
+|       r14_reg    |    <0.001 |
+|       r8_reg     |     0.000 |
+|       r9_reg     |     0.000 |
+|       rax_reg    |     0.000 |
+|       rbp_reg    |     0.000 |
+|       rbx_reg    |    <0.001 |
+|       rcx_reg    |     0.000 |
+|       rdi_reg    |    <0.001 |
+|       rdx_reg    |     0.000 |
+|       rsi_reg    |     0.000 |
+|       rsp_reg    |     0.000 |
++------------------+-----------+
+
+

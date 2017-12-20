@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-311] analyzing module cenrreg
+INFO: [VRFC 10-311] analyzing module preg
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module bmemory
+INFO: [VRFC 10-311] analyzing module split
+INFO: [VRFC 10-311] analyzing module align
+INFO: [VRFC 10-311] analyzing module pc_increment
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module cc
+INFO: [VRFC 10-311] analyzing module cond
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol dmem_error, assumed default net type wire [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1432]
+INFO: [VRFC 10-311] analyzing module sim

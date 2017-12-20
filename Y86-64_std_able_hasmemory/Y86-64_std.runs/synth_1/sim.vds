@@ -1,0 +1,1046 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Dec 19 21:17:12 2017
+# Process ID: 12612
+# Current directory: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1
+# Command line: vivado.exe -log sim.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sim.tcl
+# Log file: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1/sim.vds
+# Journal file: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sim.tcl -notrace
+Command: synth_design -top sim -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 346.102 ; gain = 102.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sim' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1574]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1602]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1606]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1610]
+INFO: [Synth 8-638] synthesizing module 'processor' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1144]
+	Parameter RUN_MODE bound to: 0 - type: integer 
+	Parameter RESET_MODE bound to: 1 - type: integer 
+	Parameter DOWNLOAD_MODE bound to: 2 - type: integer 
+	Parameter UPLOAD_MODE bound to: 3 - type: integer 
+	Parameter STATUS_MODE bound to: 4 - type: integer 
+	Parameter IHALT bound to: 4'b0000 
+	Parameter INOP bound to: 4'b0001 
+	Parameter IRRMOVQ bound to: 4'b0010 
+	Parameter IIRMOVQ bound to: 4'b0011 
+	Parameter IRMMOVQ bound to: 4'b0100 
+	Parameter IMRMOVQ bound to: 4'b0101 
+	Parameter IOPQ bound to: 4'b0110 
+	Parameter IJXX bound to: 4'b0111 
+	Parameter ICALL bound to: 4'b1000 
+	Parameter IRET bound to: 4'b1001 
+	Parameter IPUSHQ bound to: 4'b1010 
+	Parameter IPOPQ bound to: 4'b1011 
+	Parameter IIADDQ bound to: 4'b1100 
+	Parameter ILEAVE bound to: 4'b1101 
+	Parameter IPOP2 bound to: 4'b1110 
+	Parameter FNONE bound to: 4'b0000 
+	Parameter UNCOND bound to: 4'b0000 
+	Parameter RRSP bound to: 4'b0100 
+	Parameter RRBP bound to: 4'b0101 
+	Parameter RNONE bound to: 4'b1111 
+	Parameter ALUADD bound to: 4'b0000 
+	Parameter SBUB bound to: 3'b000 
+	Parameter SAOK bound to: 3'b001 
+	Parameter SHLT bound to: 3'b010 
+	Parameter SADR bound to: 3'b011 
+	Parameter SINS bound to: 3'b100 
+	Parameter SPIP bound to: 3'b101 
+INFO: [Synth 8-638] synthesizing module 'preg' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cenrreg' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+	Parameter width bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cenrreg' (1#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+INFO: [Synth 8-256] done synthesizing module 'preg' (2#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+INFO: [Synth 8-638] synthesizing module 'preg__parameterized0' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+	Parameter width bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cenrreg__parameterized0' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+	Parameter width bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cenrreg__parameterized0' (2#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+INFO: [Synth 8-256] done synthesizing module 'preg__parameterized0' (2#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+INFO: [Synth 8-638] synthesizing module 'preg__parameterized1' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cenrreg__parameterized1' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cenrreg__parameterized1' (2#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+INFO: [Synth 8-256] done synthesizing module 'preg__parameterized1' (2#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+INFO: [Synth 8-638] synthesizing module 'preg__parameterized2' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+	Parameter width bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cenrreg__parameterized2' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+	Parameter width bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cenrreg__parameterized2' (2#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:101]
+INFO: [Synth 8-256] done synthesizing module 'preg__parameterized2' (2#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:147]
+INFO: [Synth 8-638] synthesizing module 'split' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1027]
+INFO: [Synth 8-256] done synthesizing module 'split' (3#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1027]
+INFO: [Synth 8-638] synthesizing module 'align' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1037]
+INFO: [Synth 8-256] done synthesizing module 'align' (4#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1037]
+INFO: [Synth 8-638] synthesizing module 'pc_increment' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1049]
+INFO: [Synth 8-256] done synthesizing module 'pc_increment' (5#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1049]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:161]
+	Parameter RRAX bound to: 4'b0000 
+	Parameter RRCX bound to: 4'b0001 
+	Parameter RRDX bound to: 4'b0010 
+	Parameter RRBX bound to: 4'b0011 
+	Parameter RRSP bound to: 4'b0100 
+	Parameter RRBP bound to: 4'b0101 
+	Parameter RRSI bound to: 4'b0110 
+	Parameter RRDI bound to: 4'b0111 
+	Parameter R8 bound to: 4'b1000 
+	Parameter R9 bound to: 4'b1001 
+	Parameter R10 bound to: 4'b1010 
+	Parameter R11 bound to: 4'b1011 
+	Parameter R12 bound to: 4'b1100 
+	Parameter R13 bound to: 4'b1101 
+	Parameter R14 bound to: 4'b1110 
+	Parameter RNONE bound to: 4'b1111 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (6#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:161]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1060]
+	Parameter ALUADD bound to: 4'b0000 
+	Parameter ALUSUB bound to: 4'b0001 
+	Parameter ALUAND bound to: 4'b0010 
+	Parameter ALUXOR bound to: 4'b0011 
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1060]
+INFO: [Synth 8-638] synthesizing module 'cc' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1089]
+INFO: [Synth 8-256] done synthesizing module 'cc' (8#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1089]
+INFO: [Synth 8-638] synthesizing module 'cond' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1100]
+	Parameter C_YES bound to: 4'b0000 
+	Parameter C_LE bound to: 4'b0001 
+	Parameter C_L bound to: 4'b0010 
+	Parameter C_E bound to: 4'b0011 
+	Parameter C_NE bound to: 4'b0100 
+	Parameter C_GE bound to: 4'b0101 
+	Parameter C_G bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'cond' (9#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1100]
+INFO: [Synth 8-638] synthesizing module 'bmemory' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:312]
+	Parameter memsize bound to: 8192 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ram' [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:31]
+	Parameter wordsize bound to: 8 - type: integer 
+	Parameter wordcount bound to: 512 - type: integer 
+	Parameter addrsize bound to: 60 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram' (10#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:31]
+INFO: [Synth 8-256] done synthesizing module 'bmemory' (11#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:312]
+INFO: [Synth 8-256] done synthesizing module 'processor' (12#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1144]
+WARNING: [Synth 8-85] always block has no event control specified [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1617]
+WARNING: [Synth 8-85] always block has no event control specified [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1618]
+WARNING: [Synth 8-3848] Net idata in module/entity sim does not have driver. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1582]
+INFO: [Synth 8-256] done synthesizing module 'sim' (13#1) [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1574]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[59]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[58]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[57]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[56]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[55]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[54]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[53]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[52]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[51]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[50]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[49]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[48]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[47]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[46]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[45]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[44]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[43]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[42]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[41]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[40]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[39]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[38]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[37]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[36]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[35]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[34]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[33]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[32]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[31]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[30]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[29]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[28]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[27]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[26]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[25]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[24]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[23]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[22]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[21]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[20]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[19]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[18]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[17]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[16]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[15]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[14]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[13]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[12]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[11]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[10]
+WARNING: [Synth 8-3331] design ram has unconnected port addrA[9]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[59]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[58]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[57]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[56]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[55]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[54]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[53]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[52]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[51]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[50]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[49]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[48]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[47]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[46]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[45]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[44]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[43]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[42]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[41]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[40]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[39]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[38]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[37]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[36]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[35]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[34]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[33]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[32]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[31]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[30]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[29]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[28]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[27]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[26]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[25]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[24]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[23]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[22]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[21]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[20]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[19]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[18]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[17]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[16]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[15]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[14]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[13]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[12]
+WARNING: [Synth 8-3331] design ram has unconnected port addrB[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 408.820 ; gain = 164.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin core:idata[63] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[62] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[61] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[60] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[59] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[58] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[57] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[56] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[55] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[54] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[53] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[52] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[51] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[50] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[49] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[48] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[47] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[46] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[45] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[44] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[43] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[42] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[41] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[40] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[39] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[38] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[37] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[36] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[35] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[34] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[33] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[32] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[31] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[30] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[29] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[28] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[27] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[26] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[25] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[24] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[23] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[22] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[21] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[20] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[19] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[18] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[17] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[16] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[15] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[14] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[13] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[12] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[11] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[10] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[9] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[8] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[7] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[6] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[5] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[4] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[3] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[2] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[1] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+WARNING: [Synth 8-3295] tying undriven pin core:idata[0] to constant 0 [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1588]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 408.820 ; gain = 164.828
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:1]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:1]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:2]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:2]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:3]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:3]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:4]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:4]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:5]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:5]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:6]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:6]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:7]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:7]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:8]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:8]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:9]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:9]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:10]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:10]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:11]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:11]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:12]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:12]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:13]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:13]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:14]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:14]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:15]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:15]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:16]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:16]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:17]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:17]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:18]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:18]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:19]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:19]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:20]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:20]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:21]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:21]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:22]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:22]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:23]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:23]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:24]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:24]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:25]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:25]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:26]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:26]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:27]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:27]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:28]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:28]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:29]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:29]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:30]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:30]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:31]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:31]
+WARNING: [Vivado 12-507] No nets matched '<myHier/myNet>'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:32]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'set_property' specified for 'objects'. [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc:32]
+Finished Parsing XDC File [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/constrs_1/new/test.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 770.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 770.410 ; gain = 526.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 770.410 ; gain = 526.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 770.410 ; gain = 526.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "f_stat1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_stat1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_srcA0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d_srcB0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 770.410 ; gain = 526.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     64 Bit       Adders := 1     
+	   2 Input     64 Bit       Adders := 3     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     60 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 29    
+	                8 Bit    Registers := 32    
+	                4 Bit    Registers := 17    
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 16    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 57    
+	   4 Input     64 Bit        Muxes := 1     
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     60 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 20    
+	   2 Input      4 Bit        Muxes := 26    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 55    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cenrreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cenrreg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cenrreg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cenrreg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module align 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module pc_increment 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     64 Bit       Adders := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 15    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     64 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module cond 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module bmemory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input     60 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     60 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 20    
+Module processor 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 11    
+	   5 Input     64 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element E_srcA_reg/r/out_reg was removed.  [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:115]
+WARNING: [Synth 8-6014] Unused sequential element E_srcB_reg/r/out_reg was removed.  [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:115]
+WARNING: [Synth 8-6014] Unused sequential element M_ifun_reg/r/out_reg was removed.  [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:115]
+WARNING: [Synth 8-6014] Unused sequential element bank0/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank1/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank2/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank3/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank4/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank5/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank6/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank7/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank8/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank9/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank10/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank11/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank12/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank13/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank14/mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bank15/mem_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_15/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_14/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_13/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_12/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_11/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_10/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_9/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_8/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_7/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_6/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_5/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_4/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_3/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_2/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_1/i_0)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (core/m/i_0/i_0)
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module bmemory.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module bmemory.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 783.188 ; gain = 539.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 868.742 ; gain = 624.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 878.824 ; gain = 634.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|ram:        | mem_reg    | 512 x 8(READ_FIRST)    | W | R | 512 x 8(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'mi_5725' (FD) to 'mi_5724'
+INFO: [Synth 8-3886] merging instance 'mi_5724' (FD) to 'mi_3895'
+INFO: [Synth 8-3886] merging instance 'mi_3895' (FD) to 'mi_3878'
+INFO: [Synth 8-3886] merging instance 'mi_3878' (FD) to 'mi_3861'
+INFO: [Synth 8-3886] merging instance 'mi_3861' (FD) to 'mi_3844'
+INFO: [Synth 8-3886] merging instance 'mi_3844' (FD) to 'mi_3827'
+INFO: [Synth 8-3886] merging instance 'mi_3827' (FD) to 'mi_3810'
+INFO: [Synth 8-3886] merging instance 'mi_3810' (FD) to 'mi_3793'
+INFO: [Synth 8-3886] merging instance 'mi_3793' (FD) to 'mi_3776'
+INFO: [Synth 8-3886] merging instance 'mi_3776' (FD) to 'mi_3759'
+INFO: [Synth 8-3886] merging instance 'mi_3759' (FD) to 'mi_3742'
+INFO: [Synth 8-3886] merging instance 'mi_3742' (FD) to 'mi_3725'
+INFO: [Synth 8-3886] merging instance 'mi_3725' (FD) to 'mi_3708'
+INFO: [Synth 8-3886] merging instance 'mi_3708' (FD) to 'mi_3691'
+INFO: [Synth 8-3886] merging instance 'mi_3691' (FD) to 'mi_3674'
+INFO: [Synth 8-4480] The timing for the instance core/m/bank0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank9/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank9/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank10/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank10/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank11/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank11/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank12/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank12/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank13/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank13/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank14/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank14/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank15/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance core/m/bank15/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:21 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    94|
+|3     |LUT1     |     9|
+|4     |LUT2     |   330|
+|5     |LUT3     |   224|
+|6     |LUT4     |   285|
+|7     |LUT5     |   707|
+|8     |LUT6     |  2875|
+|9     |MUXF7    |   256|
+|10    |MUXF8    |   128|
+|11    |RAMB18E1 |    16|
+|12    |FDRE     |  1830|
+|13    |FDSE     |    27|
+|14    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------------------+------+
+|      |Instance         |Module                     |Cells |
++------+-----------------+---------------------------+------+
+|1     |top              |                           |  6798|
+|2     |  core           |processor                  |  6624|
+|3     |    D_icode_reg  |preg__parameterized1       |   567|
+|4     |      r          |cenrreg__parameterized1_80 |   567|
+|5     |    D_ifun_reg   |preg__parameterized1_0     |     4|
+|6     |      r          |cenrreg__parameterized1_79 |     4|
+|7     |    D_rA_reg     |preg__parameterized1_1     |     4|
+|8     |      r          |cenrreg__parameterized1_78 |     4|
+|9     |    D_rB_reg     |preg__parameterized1_2     |     4|
+|10    |      r          |cenrreg__parameterized1_77 |     4|
+|11    |    D_stat_reg   |preg__parameterized0       |     3|
+|12    |      r          |cenrreg__parameterized0_76 |     3|
+|13    |    D_valC_reg   |preg                       |   128|
+|14    |      r          |cenrreg_75                 |   128|
+|15    |    D_valP_reg   |preg_3                     |    64|
+|16    |      r          |cenrreg_74                 |    64|
+|17    |    E_dstE_reg   |preg__parameterized1_4     |     4|
+|18    |      r          |cenrreg__parameterized1_73 |     4|
+|19    |    E_dstM_reg   |preg__parameterized1_5     |     8|
+|20    |      r          |cenrreg__parameterized1_72 |     8|
+|21    |    E_icode_reg  |preg__parameterized1_6     |   632|
+|22    |      r          |cenrreg__parameterized1_71 |   632|
+|23    |    E_ifun_reg   |preg__parameterized1_7     |     5|
+|24    |      r          |cenrreg__parameterized1_70 |     5|
+|25    |    E_stat_reg   |preg__parameterized0_8     |     3|
+|26    |      r          |cenrreg__parameterized0_69 |     3|
+|27    |    E_valA_reg   |preg_9                     |    65|
+|28    |      r          |cenrreg_68                 |    65|
+|29    |    E_valB_reg   |preg_10                    |    65|
+|30    |      r          |cenrreg_67                 |    65|
+|31    |    E_valC_reg   |preg_11                    |    64|
+|32    |      r          |cenrreg_66                 |    64|
+|33    |    F_predPC_reg |preg_12                    |    64|
+|34    |      r          |cenrreg_65                 |    64|
+|35    |    M_Cnd_reg    |preg__parameterized2       |     1|
+|36    |      r          |cenrreg__parameterized2    |     1|
+|37    |    M_dstE_reg   |preg__parameterized1_13    |     4|
+|38    |      r          |cenrreg__parameterized1_64 |     4|
+|39    |    M_dstM_reg   |preg__parameterized1_14    |     4|
+|40    |      r          |cenrreg__parameterized1_63 |     4|
+|41    |    M_icode_reg  |preg__parameterized1_15    |   339|
+|42    |      r          |cenrreg__parameterized1_62 |   339|
+|43    |    M_stat_reg   |preg__parameterized0_16    |   135|
+|44    |      r          |cenrreg__parameterized0_61 |   135|
+|45    |    M_valA_reg   |preg_17                    |   496|
+|46    |      r          |cenrreg_60                 |   496|
+|47    |    M_valE_reg   |preg_18                    |    64|
+|48    |      r          |cenrreg_59                 |    64|
+|49    |    W_dstE_reg   |preg__parameterized1_19    |    19|
+|50    |      r          |cenrreg__parameterized1_58 |    19|
+|51    |    W_dstM_reg   |preg__parameterized1_20    |  1035|
+|52    |      r          |cenrreg__parameterized1_57 |  1035|
+|53    |    W_icode_reg  |preg__parameterized1_21    |     5|
+|54    |      r          |cenrreg__parameterized1    |     5|
+|55    |    W_stat_reg   |preg__parameterized0_22    |     5|
+|56    |      r          |cenrreg__parameterized0_56 |     5|
+|57    |    W_valE_reg   |preg_23                    |    64|
+|58    |      r          |cenrreg_55                 |    64|
+|59    |    W_valM_reg   |preg_24                    |    64|
+|60    |      r          |cenrreg_54                 |    64|
+|61    |    ccreg        |cc                         |     4|
+|62    |      c          |cenrreg__parameterized0    |     4|
+|63    |    m            |bmemory                    |   829|
+|64    |      bank0      |ram                        |    74|
+|65    |      bank1      |ram_39                     |    65|
+|66    |      bank10     |ram_40                     |    25|
+|67    |      bank11     |ram_41                     |    25|
+|68    |      bank12     |ram_42                     |    25|
+|69    |      bank13     |ram_43                     |    25|
+|70    |      bank14     |ram_44                     |    25|
+|71    |      bank15     |ram_45                     |   154|
+|72    |      bank2      |ram_46                     |    65|
+|73    |      bank3      |ram_47                     |    65|
+|74    |      bank4      |ram_48                     |    66|
+|75    |      bank5      |ram_49                     |    65|
+|76    |      bank6      |ram_50                     |    57|
+|77    |      bank7      |ram_51                     |    35|
+|78    |      bank8      |ram_52                     |    33|
+|79    |      bank9      |ram_53                     |    25|
+|80    |    pci          |pc_increment               |    16|
+|81    |    regf         |regfile                    |  1856|
+|82    |      r10_reg    |cenrreg                    |    64|
+|83    |      r11_reg    |cenrreg_25                 |   320|
+|84    |      r12_reg    |cenrreg_26                 |    64|
+|85    |      r13_reg    |cenrreg_27                 |    64|
+|86    |      r14_reg    |cenrreg_28                 |   192|
+|87    |      r8_reg     |cenrreg_29                 |    64|
+|88    |      r9_reg     |cenrreg_30                 |    64|
+|89    |      rax_reg    |cenrreg_31                 |    64|
+|90    |      rbp_reg    |cenrreg_32                 |    64|
+|91    |      rbx_reg    |cenrreg_33                 |   448|
+|92    |      rcx_reg    |cenrreg_34                 |    64|
+|93    |      rdi_reg    |cenrreg_35                 |   192|
+|94    |      rdx_reg    |cenrreg_36                 |    64|
+|95    |      rsi_reg    |cenrreg_37                 |    64|
+|96    |      rsp_reg    |cenrreg_38                 |    64|
++------+-----------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 973.980 ; gain = 729.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 419 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:15 . Memory (MB): peak = 973.980 ; gain = 368.398
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 973.980 ; gain = 729.988
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 494 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 321 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 973.980 ; gain = 742.938
+INFO: [Common 17-1381] The checkpoint 'D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1/sim.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sim_utilization_synth.rpt -pb processor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 973.980 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 19 21:18:48 2017...

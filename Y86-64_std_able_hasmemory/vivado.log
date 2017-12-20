@@ -1,0 +1,431 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Dec 17 20:31:45 2017
+# Process ID: 2544
+# Current directory: D:/programme/hardware/Y86-64_std
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2120 D:\programme\hardware\Y86-64_std\Y86-64_std.xpr
+# Log file: D:/programme/hardware/Y86-64_std/vivado.log
+# Journal file: D:/programme/hardware/Y86-64_std\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/programme/hardware/Y86-64_std/Y86-64_std.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 776.324 ; gain = 104.840
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 824 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.935 . Memory (MB): peak = 1093.328 ; gain = 7.316
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.936 . Memory (MB): peak = 1093.328 ; gain = 7.316
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1204.031 ; gain = 427.707
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Dec 17 20:40:48 2017] Launched synth_1...
+Run output will be captured here: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Sun Dec 17 20:42:12 2017] Launched impl_1...
+Run output will be captured here: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 824 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.927 . Memory (MB): peak = 1753.152 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.927 . Memory (MB): peak = 1753.152 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 1760.211 ; gain = 27.063
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'creg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj creg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-311] analyzing module cenrreg
+INFO: [VRFC 10-311] analyzing module cenreg
+INFO: [VRFC 10-311] analyzing module creg
+INFO: [VRFC 10-311] analyzing module preg
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module bmemory
+INFO: [VRFC 10-311] analyzing module split
+INFO: [VRFC 10-311] analyzing module align
+INFO: [VRFC 10-311] analyzing module pc_increment
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module cc
+INFO: [VRFC 10-311] analyzing module cond
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol dmem_error, assumed default net type wire [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1430]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0ba81cacdbd049e8b498a21e71b543a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot creg_behav xil_defaultlib.creg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cenrreg
+Compiling module xil_defaultlib.cenreg
+Compiling module xil_defaultlib.creg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot creg_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/xsim.dir/creg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/xsim.dir/creg_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Dec 17 22:20:40 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 17 22:20:40 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1806.477 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "creg_behav -key {Behavioral:sim_1:Functional:creg} -tclbatch {creg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source creg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'creg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1822.539 ; gain = 16.063
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1843.660 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'creg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj creg_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0ba81cacdbd049e8b498a21e71b543a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot creg_behav xil_defaultlib.creg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "creg_behav -key {Behavioral:sim_1:Functional:creg} -tclbatch {creg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source creg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'creg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1843.660 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'creg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj creg_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0ba81cacdbd049e8b498a21e71b543a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot creg_behav xil_defaultlib.creg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "creg_behav -key {Behavioral:sim_1:Functional:creg} -tclbatch {creg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source creg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'creg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1843.660 ; gain = 0.000
+add_bp {D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v} 112
+remove_bps -file {D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v} -line 112
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'creg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj creg_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0ba81cacdbd049e8b498a21e71b543a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot creg_behav xil_defaultlib.creg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "creg_behav -key {Behavioral:sim_1:Functional:creg} -tclbatch {creg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source creg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'creg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+export_ip_user_files -of_objects  [get_files D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v] -no_script -reset -force -quiet
+remove_files  D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v
+update_compile_order -fileset sim_1
+add_files -norecurse D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v
+export_ip_user_files -of_objects  [get_files D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v] -no_script -reset -force -quiet
+remove_files  D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v
+add_files -norecurse D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Dec 17 22:41:12 2017] Launched synth_1...
+Run output will be captured here: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Sun Dec 17 22:42:35 2017] Launched impl_1...
+Run output will be captured here: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sun Dec 17 22:45:00 2017] Launched synth_1...
+Run output will be captured here: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Sun Dec 17 22:49:26 2017] Launched impl_1...
+Run output will be captured here: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 824 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.982 . Memory (MB): peak = 1870.543 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.982 . Memory (MB): peak = 1870.543 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1870.543 ; gain = 15.902
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-311] analyzing module cenrreg
+INFO: [VRFC 10-311] analyzing module preg
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module bmemory
+INFO: [VRFC 10-311] analyzing module split
+INFO: [VRFC 10-311] analyzing module align
+INFO: [VRFC 10-311] analyzing module pc_increment
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module cc
+INFO: [VRFC 10-311] analyzing module cond
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2458] undeclared symbol dmem_error, assumed default net type wire [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1432]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v:35]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0ba81cacdbd049e8b498a21e71b543a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port status on this module [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v:33]
+ERROR: [VRFC 10-2063] Module <preg> not found while processing module instance <F_predPC_reg> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1356]
+ERROR: [VRFC 10-2063] Module <split> not found while processing module instance <split> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1399]
+ERROR: [VRFC 10-2063] Module <align> not found while processing module instance <align> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1400]
+ERROR: [VRFC 10-2063] Module <pc_increment> not found while processing module instance <pci> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1401]
+ERROR: [VRFC 10-2063] Module <regfile> not found while processing module instance <regf> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1404]
+ERROR: [VRFC 10-2063] Module <alu> not found while processing module instance <alu> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1411]
+ERROR: [VRFC 10-2063] Module <cc> not found while processing module instance <ccreg> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1412]
+ERROR: [VRFC 10-2063] Module <cond> not found while processing module instance <cond_check> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1416]
+ERROR: [VRFC 10-2063] Module <bmemory> not found while processing module instance <m> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1419]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v:35]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0ba81cacdbd049e8b498a21e71b543a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port status on this module [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v:33]
+ERROR: [VRFC 10-2063] Module <preg> not found while processing module instance <F_predPC_reg> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1356]
+ERROR: [VRFC 10-2063] Module <split> not found while processing module instance <split> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1399]
+ERROR: [VRFC 10-2063] Module <align> not found while processing module instance <align> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1400]
+ERROR: [VRFC 10-2063] Module <pc_increment> not found while processing module instance <pci> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1401]
+ERROR: [VRFC 10-2063] Module <regfile> not found while processing module instance <regf> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1404]
+ERROR: [VRFC 10-2063] Module <alu> not found while processing module instance <alu> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1411]
+ERROR: [VRFC 10-2063] Module <cc> not found while processing module instance <ccreg> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1412]
+ERROR: [VRFC 10-2063] Module <cond> not found while processing module instance <cond_check> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1416]
+ERROR: [VRFC 10-2063] Module <bmemory> not found while processing module instance <m> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1419]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 0ba81cacdbd049e8b498a21e71b543a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port status on this module [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v:33]
+ERROR: [VRFC 10-2063] Module <preg> not found while processing module instance <F_predPC_reg> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1356]
+ERROR: [VRFC 10-2063] Module <split> not found while processing module instance <split> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1399]
+ERROR: [VRFC 10-2063] Module <align> not found while processing module instance <align> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1400]
+ERROR: [VRFC 10-2063] Module <pc_increment> not found while processing module instance <pci> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1401]
+ERROR: [VRFC 10-2063] Module <regfile> not found while processing module instance <regf> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1404]
+ERROR: [VRFC 10-2063] Module <alu> not found while processing module instance <alu> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1411]
+ERROR: [VRFC 10-2063] Module <cc> not found while processing module instance <ccreg> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1412]
+ERROR: [VRFC 10-2063] Module <cond> not found while processing module instance <cond_check> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1416]
+ERROR: [VRFC 10-2063] Module <bmemory> not found while processing module instance <m> [D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v:1419]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 17 22:56:30 2017...

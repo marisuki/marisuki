@@ -1,0 +1,7 @@
+0.6
+2017.3
+Oct  4 2017
+20:11:37
+D:/programme/hardware/Y86-64_std/Y86-64_std.sim/sim_1/behav/xsim/glbl.v,1507081072,verilog,,,,glbl,,,,,,,,
+D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v,1513584552,verilog,,,,sim1,,,,,,,,
+D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v,1513598234,verilog,,D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sim_1/new/sim1.v,,align;alu;bmemory;cc;cenrreg;cond;pc_increment;preg;processor;ram;regfile;sim;split,,,,,,,,

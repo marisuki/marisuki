@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Dec 19 21:18:54 2017
+# Process ID: 868
+# Current directory: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/impl_1
+# Command line: vivado.exe -log sim.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sim.tcl -notrace
+# Log file: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/impl_1/sim.vdi
+# Journal file: D:/programme/hardware/Y86-64_std/Y86-64_std.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sim.tcl -notrace

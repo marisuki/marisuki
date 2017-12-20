@@ -1,0 +1,59 @@
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1461
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1033
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 10 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 100 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 110 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 150 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 170 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 190 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 190 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 200 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1033
+Stopped at time : 200 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1461
+
+core value for core1: irmovq $512, rax; iraddq $0xb1, rax; hlt
+Stopped at time : 220 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+f_icode, f_ifun, rax, f_pc, f_status = 3, 0, 0000000000000000, 0000000000000000, 1
+
+Stopped at time : 230 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 230 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1461
+f_icode, f_ifun, rax, f_pc, f_status = c, 0, 0000000000000000, 000000000000000a, 1
+
+Stopped at time : 250 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 250 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1461
+f_icode, f_ifun, rax, f_pc, f_status = 0, 0, 0000000000000000, 0000000000000014, 2
+
+Stopped at time : 270 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+f_icode, f_ifun, rax, f_pc, f_status = 0, 0, 0000000000000000, 0000000000000015, 2
+
+Stopped at time : 290 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+f_icode, f_ifun, rax, f_pc, f_status = 0, 0, 0000000000000000, 0000000000000016, 2
+
+Stopped at time : 310 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+f_icode, f_ifun, rax, f_pc, f_status = 0, 0, 0000000000001500, 0000000000000017, 2
+
+Stopped at time : 330 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 330 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1033
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1461
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1033
+Stopped at time : 0 fs : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 10 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 100 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 110 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 150 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 170 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 190 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 190 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 200 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1033
+Stopped at time : 200 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1461
+
+core value for core1: irmovq $512, rax; iraddq $0xb1, rax; hlt
+Stopped at time : 220 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+f_icode, f_ifun, rax, f_pc, f_status = 3, 0, 0000000000000000, 0000000000000000, 1
+
+Stopped at time : 230 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1441
+Stopped at time : 230 ns : File "D:/programme/hardware/Y86-64_std/Y86-64_std.srcs/sources_1/new/ker.v" Line 1461
