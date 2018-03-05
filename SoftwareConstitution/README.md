@@ -1,0 +1,1 @@
+# RuiKang's rsp of software constitution
