@@ -21,3 +21,9 @@
 </br>
 
 ### CppHomework_algorithm={AlgorithmOfTetrist(cpp)}
+
+</br>
+
+### SoftwareConstitution: lan=java, labs 2018.Spring
+
+</br>
