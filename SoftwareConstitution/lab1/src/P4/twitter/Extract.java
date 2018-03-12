@@ -58,12 +58,12 @@ public class Extract {
      */
     public static Set<String> getMentionedUsers(List<Tweet> tweets) {
         //throw new RuntimeException("not implemented");
-    	String pattern = "\\@[1-9a-zA-Z_-]+";
+    	String pattern = "^\\@[0-9a-zA-Z\\_\\-]+";
     	Set<String> ans = new HashSet();
     	for(Tweet t:tweets)
     	{
     		String text = t.getText();
-    		String group[] = text.split(" |\\:");
+    		String group[] = text.split("[\\s+\\:\\;\\?\\'\\<\\>\\,\\!\\&\\*]");
     		Pattern p = Pattern.compile(pattern);
     		for(String each:group)
     		{
