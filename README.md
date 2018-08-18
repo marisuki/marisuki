@@ -3,6 +3,10 @@
 ##RuiKang's origin dictionary
 </br>
 
+##Open Source Project's material @OSS
+  Related Video on [OSS_JabRef Contribution]{https://www.bilibili.com/video/av29380526}
+
+
 ##card(1):filename= vivado: the "Great Homework" of Digital Logic.
 </br>
 ### vivado={Homework_v2.v,JK.v,digit.v,HOMEWORK_V2.xdc}.
