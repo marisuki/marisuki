@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{PRML}
+Christopher M.Bishop.
+\newblock {\em Pattern Recognition and Machine Learning}.
+\newblock Springer, 2007.
+
+\bibitem{ML}
+周志华.
+\newblock {\em 机器学习}.
+\newblock 清华大学出版社, 2016.
+
+\end{thebibliography}
